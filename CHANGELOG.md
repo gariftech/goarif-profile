@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/gariftech/goarif-profile/compare/v0.1.1...v0.1.2) (2025-01-07)
+
+
+### Features
+
+* add license md ([f4e7c49](https://github.com/gariftech/goarif-profile/commit/f4e7c49534579392b5c591d18ddeb22aa15b7102))
+* add versionrc for standard version ([1096107](https://github.com/gariftech/goarif-profile/commit/10961079bc7722fd78e5fbf88badad030a22683d))
+
+
+### Bug Fixes
+
+* update script build ([37061ab](https://github.com/gariftech/goarif-profile/commit/37061ab2c1cab7e37bea4731989760b24313c4c7))
+
 ### 0.1.1 (2025-01-07)
 
 
