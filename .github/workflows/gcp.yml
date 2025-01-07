@@ -1,0 +1,109 @@
+---
+name: Build and Push Image to GCP
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build-push-release:
+    name: Build and Push to GCP ( Release )
+    runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: profile
+      PROJECT_ID: goarif-c-and-js
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Github Tag Release Version
+        id: latestTag
+        run: |-
+          echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
+          echo "RELEASE_VERSION=release-${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Google Cloud Platform Auth
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: "${{ secrets.SERVICE_ACCOUNT_KEY }}"
+
+      - name: "Set up Cloud SDK"
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Build Docker Image
+        run: |-
+          docker build -t $IMAGE_NAME:latest .
+
+      - name: Configure Docker Client
+        run: |-
+          gcloud auth configure-docker --quiet
+          gcloud auth configure-docker asia-southeast2-docker.pkg.dev --quiet
+
+      - name: Push Docker Image to Artifact Registry
+        run: |-
+          docker tag $IMAGE_NAME:latest asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:latest
+          docker tag $IMAGE_NAME:latest asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:release
+          docker tag $IMAGE_NAME:latest asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:${{ env.RELEASE_VERSION }}
+          docker push asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:latest
+          docker push asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:release
+          docker push asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:${{ env.RELEASE_VERSION }}
+
+      - name: Call Webhook
+        uses: joelwmale/webhook-action@2.3.2
+        env:
+          IMAGE_REGISTRY: Google Cloud Artifact
+          IMAGE_REPOSITORY: asia-southeast2-docker.pkg.dev/${{ env.PROJECT_ID }}/images/${{ env.IMAGE_NAME }}
+          IMAGE_TAG: ${{ env.RELEASE_VERSION }}
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}/api/v1/workflow-github?telegram_chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&registry=Google Cloud Platform
+          body: '{"push_data":{"tag":"${{ env.IMAGE_TAG }}"},"repository":{"name":"${{ env.IMAGE_REPOSITORY }}"}}'
+
+  build-push-staging:
+    name: Build and Push to GCP ( Staging )
+    runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: profile
+      PROJECT_ID: goarif-c-and-js
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Github Tag Staging Version
+        id: latestTag
+        run: |-
+          echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
+          echo "STAGING_VERSION=staging-${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Google Cloud Platform Auth
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: "${{ secrets.SERVICE_ACCOUNT_KEY }}"
+
+      - name: "Set up Cloud SDK"
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Build Docker Image
+        run: |-
+          docker build -f Dockerfile.dev -t $IMAGE_NAME:staging .
+
+      - name: Configure Docker Client
+        run: |-
+          gcloud auth configure-docker --quiet
+          gcloud auth configure-docker asia-southeast2-docker.pkg.dev --quiet
+
+      - name: Push Docker Image to Artifact Registry
+        run: |-
+          docker tag $IMAGE_NAME:staging asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:staging
+          docker tag $IMAGE_NAME:staging asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:${{ env.STAGING_VERSION }}
+          docker push asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:staging
+          docker push asia-southeast2-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:${{ env.STAGING_VERSION }}
+
+      - name: Call Webhook
+        uses: joelwmale/webhook-action@2.3.2
+        env:
+          IMAGE_REGISTRY: Google Cloud Artifact
+          IMAGE_REPOSITORY: asia-southeast2-docker.pkg.dev/${{ env.PROJECT_ID }}/images/${{ env.IMAGE_NAME }}
+          IMAGE_TAG: ${{ env.STAGING_VERSION }}
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}/api/v1/workflow-github?telegram_chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&registry=Google Cloud Platform
+          body: '{"push_data":{"tag":"${{ env.IMAGE_TAG }}"},"repository":{"name":"${{ env.IMAGE_REPOSITORY }}"}}'
