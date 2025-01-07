@@ -8,8 +8,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prebuild": "npm-run-all lint",
-    "prerelease": "npm-run-all prebuild",
     "postrelease": "git push --follow-tags origin main",
     "release": "standard-version",
     "release:pre": "npm run release -- --prerelease",
