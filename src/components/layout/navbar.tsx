@@ -68,18 +68,28 @@ const menus = [
   {
     group: 'Company',
     items: [
-      { title: 'About', description: 'Learn more about our company', link: '#', features: false },
+      {
+        title: 'About',
+        description: 'Learn more about our company',
+        link: '/about',
+        features: false,
+      },
       {
         title: 'Term of Service',
         description: 'Read our terms of service',
-        link: '#',
+        link: '/term-of-service',
         features: false,
       },
-      { title: 'Privacy Policy', description: 'Our privacy policy', link: '#', features: false },
       {
         title: 'Contact Us',
         description: 'Get in touch with our team',
-        link: '#',
+        link: '/contact',
+        features: false,
+      },
+      {
+        title: 'Privacy Policy',
+        description: 'Our privacy policy',
+        link: '/privacy-policy',
         features: false,
       },
     ],
