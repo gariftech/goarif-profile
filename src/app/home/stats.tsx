@@ -35,7 +35,7 @@ export default function Stats() {
                 transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
               >
                 <div className="text-4xl font-bold text-white mb-2">{stat.title}</div>
-                <div className="text-indigo-200">{stat.description}</div>
+                <div className="text-indigo-200 font-semibold">{stat.description}</div>
               </motion.div>
             ))}
           </div>
