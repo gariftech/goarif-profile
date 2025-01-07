@@ -189,7 +189,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mt-4 sm:mt-0">
               {socialMedia.map((item, index) => (
                 <Link href={item.link} className="hover:text-white transition-colors" key={index}>
                   {item.icon}
