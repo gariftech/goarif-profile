@@ -97,6 +97,21 @@ const socialMedia = [
   },
 ]
 
+const ContactLink = ({
+  href,
+  icon,
+  children,
+}: {
+  href: string
+  icon: React.ReactNode
+  children: React.ReactNode
+}) => (
+  <Link href={href} className="flex items-center gap-2 hover:text-white transition-colors">
+    {icon}
+    <span>{children}</span>
+  </Link>
+)
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 px-4">
@@ -168,25 +183,23 @@ export default function Footer() {
           {/* Contact and Social */}
           <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col gap-2">
-              <div className="flex flex-row gap-4">
-                <Link href="mailto:care@goarif.co" className="flex items-center">
-                  <Mail className="mr-2 h-4 w-4" />
-                  <span className="hover:text-white transition-colors">care@goarif.co</span>
-                </Link>
-
-                <Link href="tel:+6281112345678" className="flex items-center">
-                  <Phone className="mr-2 h-4 w-4" />
-                  <span className="hover:text-white transition-colors">+62 811 1234 5678</span>
-                </Link>
-              </div>
-
-              <Link href="https://maps.app.goo.gl/heQ4eFbBrmCz29rM6" className="flex items-center">
-                <MapPin className="mr-2 h-4 w-4" />
-                <span>
+              <div className="flex flex-col gap-2">
+                <div className="flex flex-row gap-4">
+                  <ContactLink href="mailto:care@goarif.co" icon={<Mail className="h-4 w-4" />}>
+                    care@goarif.co
+                  </ContactLink>
+                  <ContactLink href="tel:+6281112345678" icon={<Phone className="h-4 w-4" />}>
+                    +62 811 1234 5678
+                  </ContactLink>
+                </div>
+                <ContactLink
+                  href="https://maps.app.goo.gl/heQ4eFbBrmCz29rM6"
+                  icon={<MapPin className="h-4 w-4" />}
+                >
                   Jl. Jend. Sudirman, Indonesia Stock Exchange, Tower 1, Level 3 Unit 304, Jakarta,
                   DI Jakarta 12190, ID
-                </span>
-              </Link>
+                </ContactLink>
+              </div>
             </div>
 
             <div className="flex space-x-4 mt-4 sm:mt-0">
