@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/gariftech/goarif-profile/compare/v0.1.2...v0.1.3) (2025-01-07)
+
+
+### Bug Fixes
+
+* update footer ([fbe6fb8](https://github.com/gariftech/goarif-profile/commit/fbe6fb8780b04b2068efb8976b632bb1ea0cd8cf))
+* update navbar ([157b987](https://github.com/gariftech/goarif-profile/commit/157b987af5c4376e12255a6b05761a68df0a9826))
+* update partials home ([64cda70](https://github.com/gariftech/goarif-profile/commit/64cda7053f091d96d0faf76a70ed4384dcced500))
+
 ### [0.1.2](https://github.com/gariftech/goarif-profile/compare/v0.1.1...v0.1.2) (2025-01-07)
 
 
