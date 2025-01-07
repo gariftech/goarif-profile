@@ -16,7 +16,7 @@ export function FeatureCard({
   description: string
 }) {
   return (
-    <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
+    <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow h-full">
       <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
         <Icon className="w-6 h-6 text-indigo-600" />
       </div>
@@ -35,7 +35,7 @@ const features = [
   },
   {
     icon: Database,
-    title: 'Templates and Wizards by User Type',
+    title: 'Templates and Wizards by User',
     description:
       'We provide survey questionnaires, customer segmentation, sentiment analysis, predictive modeling, churn scoring, and tabular analysis.',
   },
