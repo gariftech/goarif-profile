@@ -45,10 +45,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Arif is your 24/7 AI-powered data analyst, making advanced data analysis easy and
-            accessible for everyone like Business professionals, researchers, academics, and
-            journalists. No technical skills needed. Arif helps you make smarter decisions while
-            ensuring ethical and responsible data use.
+            Imagine having a team of expert data analysts at your fingertips, available 24/7 to tackle any data challenge you face. 
+            Arif brings the power of advanced AI and machine learning effortlessly convenient, making data analysis accessible for business professionals, researchers, academics and journalists, regardless of technical expertise.
+            Arif is designed to empower you, enabling smarter decisions and ensuring data is used responsibly and ethically.
           </motion.p>
 
           <div className="flex items-center justify-center gap-4">
@@ -65,7 +64,7 @@ export default function Hero() {
               </Link>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -76,7 +75,7 @@ export default function Hero() {
               >
                 Watch Demo
               </Link>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
