@@ -23,7 +23,7 @@ export default function Hero() {
               )}
             >
               <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                <span>✨ Introducing Go Arif</span>
+                <span>✨ Introducing Arif</span>
                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
               </AnimatedShinyText>
             </div>
@@ -60,7 +60,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Link
-                href="https://app.goarif.co"
+                href="#"
                 className="px-8 py-2 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
               >
                 Try it Now
