@@ -1,5 +1,6 @@
 import { Building2, Mail, Phone } from 'lucide-react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { Button } from '~/components/ui/button'
 import { Card } from '~/components/ui/card'
 import { Input } from '~/components/ui/input'
@@ -60,18 +61,21 @@ export default function ContactPage() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <Building2 className="h-5 w-5 text-muted-foreground" />
-              <span>123 Analytics Street, Data City, 12345</span>
+              <span>
+                Jl. Jend. Sudirman, Indonesia Stock Exchange, Tower 1, Level 3 Unit 304, Jakarta, DI
+                Jakarta 12190, ID
+              </span>
             </div>
 
-            <div className="flex items-center space-x-3">
+            <Link href="mailto:care@goarif.co" className="flex items-center space-x-3">
               <Mail className="h-5 w-5 text-muted-foreground" />
-              <span>contact@arifdataanalytics.com</span>
-            </div>
+              <span>care@goarif.co</span>
+            </Link>
 
-            <div className="flex items-center space-x-3">
+            <Link href="tel:+61435544559" className="flex items-center space-x-3">
               <Phone className="h-5 w-5 text-muted-foreground" />
-              <span>+1 (555) 123-4567</span>
-            </div>
+              <span>+61 435 544 559</span>
+            </Link>
           </div>
         </div>
       </div>
