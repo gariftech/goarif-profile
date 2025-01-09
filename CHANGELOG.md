@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/gariftech/goarif-profile/compare/v0.1.4...v0.1.5) (2025-01-09)
+
+
+### Bug Fixes
+
+* contact telp number ([cd22e87](https://github.com/gariftech/goarif-profile/commit/cd22e870cf6a16dc36eaf3e9273f5500a5935149))
+* link logo ([f810510](https://github.com/gariftech/goarif-profile/commit/f8105104f08b08ecd14bf1e9ca78405e0285ec4c))
+
 ### [0.1.4](https://github.com/gariftech/goarif-profile/compare/v0.1.3...v0.1.4) (2025-01-09)
 
 
