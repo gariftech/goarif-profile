@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/gariftech/goarif-profile/compare/v0.1.3...v0.1.4) (2025-01-09)
+
+
+### Features
+
+* add core site page ([26e0765](https://github.com/gariftech/goarif-profile/commit/26e0765be8c01a49c4e9ca4160165811789b36af))
+* add lib date ([d74bebe](https://github.com/gariftech/goarif-profile/commit/d74bebec5768f8938eec32079c91ef98d38554ca))
+* add ui card & textarea ([63b7743](https://github.com/gariftech/goarif-profile/commit/63b77438d0a742cd55e7b512219419475a965221))
+* add ui component ([515239f](https://github.com/gariftech/goarif-profile/commit/515239fa018499d19d9c81c0318e60cd345064f4))
+* add ui separator ([474bb08](https://github.com/gariftech/goarif-profile/commit/474bb08c868beec1eb1adf59de94bb1da7827c1c))
+
+
+### Bug Fixes
+
+* ignore lock json ([9384ee8](https://github.com/gariftech/goarif-profile/commit/9384ee8d47452128f59a41e1e872bdbb19c1a622))
+* improve landing page ([f032a40](https://github.com/gariftech/goarif-profile/commit/f032a403191e13781c0518a8827dc2e7eee4a7e3))
+* typewriting ([6151ba4](https://github.com/gariftech/goarif-profile/commit/6151ba44c2499dbe1b0625e4d99f1ac6133eb2f1))
+* update about page ([67138f7](https://github.com/gariftech/goarif-profile/commit/67138f7d65c6ab8fbc9dc8ddb63e68df7e5f894c))
+* update content site ([9b40f92](https://github.com/gariftech/goarif-profile/commit/9b40f92d94729a880858f797f8a75b65f35716f8))
+* update footer ([dbc3909](https://github.com/gariftech/goarif-profile/commit/dbc3909158cf2ba70409bfaa3f5fe30f40a4a5bd))
+* update link navbar ([4fcc91b](https://github.com/gariftech/goarif-profile/commit/4fcc91b873aac64b5380062cf778da878bb6d8cb))
+* update site page ([97694c1](https://github.com/gariftech/goarif-profile/commit/97694c132cba92ad6a47e6ae9a2fc6e1d522ea23))
+
 ### [0.1.3](https://github.com/gariftech/goarif-profile/compare/v0.1.2...v0.1.3) (2025-01-07)
 
 
