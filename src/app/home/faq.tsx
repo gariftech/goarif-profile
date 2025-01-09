@@ -11,8 +11,7 @@ import {
 const faqs = [
   {
     question: 'What types of data can I analyze?',
-    answer:
-      'Structured (e.g., spreadsheets), unstructured (e.g., text), and semi-structured (e.g., JSON).',
+    answer: 'Structured (e.g., spreadsheets) and unstructured (e.g., text).',
   },
   {
     question: 'What kind of support is available?',
@@ -28,7 +27,7 @@ const faqs = [
   },
   {
     question: 'Can Arif handle large datasets?',
-    answer: 'Absolutely. Arif is built to efficiently manage and scale with your data needs.',
+    answer: 'Absolutely. Arif is built to efficiently manage and scale your data needs.',
   },
   {
     question: 'Can I collaborate with my team?',

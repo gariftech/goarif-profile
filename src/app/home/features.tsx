@@ -1,7 +1,8 @@
 'use client'
 
-import { IconCpu, IconFocusAuto } from '@tabler/icons-react'
-import { BarChart3, Bot, Database, LineChart, Shield } from 'lucide-react'
+import { IconAnalyze, IconReport } from '@tabler/icons-react'
+import clsx from 'clsx'
+import { Bot, ChartNoAxesCombined, Languages, Lightbulb, User } from 'lucide-react'
 import { motion } from 'motion/react'
 import React from 'react'
 import ShineBorder from '~/components/ui/shine-border'
@@ -10,13 +11,20 @@ export function FeatureCard({
   icon: Icon,
   title,
   description,
+  shadow,
 }: {
   icon: React.ElementType
   title: string
   description: string
+  shadow?: boolean
 }) {
   return (
-    <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow h-full">
+    <div
+      className={clsx(
+        'p-6 bg-white rounded-xl h-full',
+        shadow && 'shadow-md hover:shadow-xl transition-shadow'
+      )}
+    >
       <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
         <Icon className="w-6 h-6 text-indigo-600" />
       </div>
@@ -28,28 +36,39 @@ export function FeatureCard({
 
 const features = [
   {
-    icon: BarChart3,
-    title: 'Explore and Discover',
+    icon: Lightbulb,
+    title: 'Data Science and Machine Learning',
     description:
-      'Arif provides tools to dive into your data, translate and uncover patterns, turn insights into action.',
+      'Excels at uncovering hidden patterns in vast datasets, revealing insights often missed by human analysis.',
   },
   {
-    icon: Database,
-    title: 'Templates and Wizards by User',
+    icon: ChartNoAxesCombined,
+    title: 'Predictive Analytics',
     description:
-      'We provide survey questionnaires, customer segmentation, sentiment analysis, predictive modeling, churn scoring, and tabular analysis.',
+      'Helps businesses predict and proactively address challenges like customer churn & market trends. ',
   },
   {
-    icon: LineChart,
-    title: 'Visual Storytelling',
+    icon: User,
+    title: 'Customer Segment',
     description:
-      'Communicate your findings effectively with powerful visualization tools that create impactful charts, dashboards, and graphs.',
+      'Segmentation fosters stronger customer relationships through personalized experiences, driving loyalty.',
   },
   {
-    icon: Shield,
-    title: 'Tailored Analysis',
+    icon: IconAnalyze,
+    title: 'Sentiment Analysis',
     description:
-      'Use pre-built templates and guided wizards customized for your field and make it easy to get started.',
+      'Pinpoint specific areas where customers are experiencing dissatisfaction & prioritize improvements.',
+  },
+  {
+    icon: IconReport,
+    title: 'Visualization Report',
+    description:
+      'Use powerful visualization tools and report template to effectively communicate findings.',
+  },
+  {
+    icon: Languages,
+    title: 'Transcribe & Translate',
+    description: 'AI accelerates the process, significantly lowering costs.',
   },
 ]
 
@@ -80,7 +99,7 @@ export default function Features() {
               data
             </motion.p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {features.map((feature, index) => {
               return (
                 <motion.div
@@ -139,12 +158,22 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.4 }}
+              className="p-6 bg-white rounded-xl h-full shadow-md hover:shadow-xl transition-shadow"
             >
-              <FeatureCard
-                icon={Bot}
-                title="Machine Learning"
-                description="The platform supports supervised learning for tasks like regression, including predictive and churn analysis, as well as classification for sentiment analysis. It also leverages unsupervised learning for clustering, such as customer segmentation, and dimensionality reduction to uncover hidden patterns in data."
-              />
+              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                <Bot className="w-6 h-6 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Machine Learning</h3>
+              <ul className="text-gray-600 list-disc pl-6">
+                <li>
+                  Supervised learning for regression (predictive and churn analysis) and
+                  classification (sentiment analysis).
+                </li>
+                <li>
+                  Unsupervised learning for clustering (customer segmentation) and dimensionality
+                  reduction.
+                </li>
+              </ul>
             </motion.div>
 
             <div className="flex flex-col gap-4">
@@ -153,12 +182,16 @@ export default function Features() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
+                className="p-6 bg-white rounded-xl h-full shadow-md hover:shadow-xl transition-shadow"
               >
-                <FeatureCard
-                  icon={IconCpu}
-                  title="Natural Language Processing (NLP):"
-                  description="The platform provides sentiment analysis to gauge emotions in text data, alongside text mining capabilities to extract themes and topics from unstructured data, enabling deeper insights and understanding of textual information."
-                />
+                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                  <Bot className="w-6 h-6 text-indigo-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Natural Language Processing (NLP)</h3>
+                <ul className="text-gray-600 list-disc pl-6">
+                  <li>Sentiment analysis to gauge emotions in text data.</li>
+                  <li>Text mining to extract themes and topics from unstructured data.</li>
+                </ul>
               </motion.div>
 
               <motion.div
@@ -166,12 +199,18 @@ export default function Features() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
+                className="p-6 bg-white rounded-xl h-full shadow-md hover:shadow-xl transition-shadow"
               >
-                <FeatureCard
-                  icon={IconFocusAuto}
-                  title="Automated Data Preparation"
-                  description="Data cleaning and transformation tasks like handling missing values, scaling features, and engineering new ones."
-                />
+                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                  <Bot className="w-6 h-6 text-indigo-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Automated Data Preparation</h3>
+                <ul className="text-gray-600 list-disc pl-6">
+                  <li>
+                    Data cleaning and transformation tasks like handling missing values, scaling
+                    features, and engineering new ones.
+                  </li>
+                </ul>
               </motion.div>
             </div>
           </div>

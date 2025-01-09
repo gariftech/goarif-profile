@@ -3,7 +3,9 @@ import Cta from './home/cta'
 import Faq from './home/faq'
 import Features from './home/features'
 import Hero from './home/hero'
+import HowItWork from './home/how-it-work'
 import Stats from './home/stats'
+import Testimony from './home/testimony'
 
 export default function Home() {
   return (
@@ -17,6 +19,12 @@ export default function Home() {
 
         {/* Features Section */}
         <Features />
+
+        {/* How It Works Section */}
+        <HowItWork />
+
+        {/* Testimony Section */}
+        <Testimony />
 
         {/* CTA Section */}
         <Cta />

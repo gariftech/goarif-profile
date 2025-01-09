@@ -30,10 +30,13 @@ export default function Cta() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              The platform ensures robust security through encryption, access controls, and regular
-              audits, while maintaining compliance with regulations like GDPR. Users retain full
-              control over their data and its usage, supported by clear and transparent policies on
-              data collection and handling.
+              <strong>Security:</strong> Robust encryption, access controls, and regular audits.
+              <br />
+              <strong>Compliance:</strong> Adheres to the GDPR regulations.
+              <br />
+              <strong>User Control:</strong> You control your data and its use.
+              <br />
+              <strong>Transparency:</strong> Clear policies on data collection and usage.
             </motion.p>
 
             <motion.div
