@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/gariftech/goarif-profile/compare/v0.1.5...v0.1.6) (2025-01-09)
+
+
+### Bug Fixes
+
+* hide app goarif web ([8f52b96](https://github.com/gariftech/goarif-profile/commit/8f52b96bd5e1a7dde440ae28a1d158124f22822b))
+
 ### [0.1.5](https://github.com/gariftech/goarif-profile/compare/v0.1.4...v0.1.5) (2025-01-09)
 
 
