@@ -99,13 +99,16 @@ const menus = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
+  const login_url = '#'
+  const register_url = '#'
+
   return (
     <nav className="border-b bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold">
-              Go Arif
+              Arif
             </Link>
           </div>
 
@@ -156,13 +159,13 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-2">
             <Link
-              href="https://app.goarif.co/auth/login"
+              href={login_url}
               className="text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-4 py-2 rounded-lg"
             >
               Sign in
             </Link>
             <Link
-              href="https://app.goarif.co/auth/register"
+              href={register_url}
               className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700"
             >
               Get Started
@@ -244,14 +247,14 @@ export default function Navbar() {
         </ul>
 
         <Link
-          href="https://app.goarif.co/auth/login"
+          href={login_url}
           className="block px-6 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100"
         >
           Sign in
         </Link>
 
         <Link
-          href="https://app.goarif.co/auth/register"
+          href={register_url}
           className="block px-6 py-2 text-base font-medium text-indigo-600 hover:text-indigo-700 hover:bg-gray-100"
         >
           Get Started
