@@ -12,16 +12,55 @@ export default function AboutPage() {
     <section className="container py-10 flex-1">
       <h1 className="text-4xl font-bold mb-6">About</h1>
       <Separator className="my-4" />
-      <p className="text-base">
-        At Go Arif, we&apos;re revolutionizing data analytics with our AI-powered platform. Our
-        mission is to make advanced data analysis accessible to everyone, regardless of their
-        technical background. We empower business professionals, researchers, academics, and
-        journalists to uncover valuable insights from their data, driving smarter decision-making.
-        Our platform combines cutting-edge artificial intelligence with user-friendly interfaces,
-        ensuring that complex data analysis is both powerful and intuitive. We&apos;re committed to
-        ethical data practices, maintaining the highest standards of data privacy and security while
-        fostering innovation in the field of AI-driven analytics.
-      </p>
+      <div className="text-base space-y-4">
+        <p>
+          Arif offers a cost-effective and time-efficient solution for professionals, particularly
+          if you are:
+        </p>
+
+        <ul className="list-disc pl-6">
+          <li>
+            <strong>Marketing Professionals:</strong> managers and brand managers, who need to
+            understand consumer behavior, segment their audience, and market sentiments
+          </li>
+          <li>
+            <strong>Researchers:</strong> market researchers and academics who require tools for
+            in-depth data analysis, charting and reporting
+          </li>
+          <li>
+            <strong>Business Strategists:</strong> brand principals, business analysts, and product
+            managers who need data-driven insights to make informed decisions about product
+            development, market positioning, and growth strategies.
+          </li>
+          <li>
+            <strong>Public Communicators:</strong> journalists and PR professionals who need to
+            analyze data, track trends, and understand public sentiment to inform their reporting
+            and communication strategies.
+          </li>
+        </ul>
+
+        <p>Ready to Experience Arif? Take the first step towards smarter data-driven decisions:</p>
+
+        <ul className="list-disc pl-6">
+          <li>
+            <strong>Try It Free:</strong> Explore Arif&apos;s features at no cost. Get Started Now.
+          </li>
+          <li>
+            <strong>Book a Demo:</strong> See Arif in action and learn how it can work for you.
+            Schedule a Demo.
+          </li>
+          <li>
+            <strong>Contact Us:</strong> Have questions? Our team is here to help. Reach Out Today
+          </li>
+        </ul>
+
+        <p>
+          Experience Arif and transform the way you work with data.
+          <br />
+          Whether you’re solving business challenges or conducting groundbreaking research, Arif is
+          here to help you every step of the way.
+        </p>
+      </div>
     </section>
   )
 }
