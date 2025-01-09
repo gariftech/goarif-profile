@@ -188,8 +188,8 @@ export default function Footer() {
                   <ContactLink href="mailto:care@goarif.co" icon={<Mail className="h-4 w-4" />}>
                     care@goarif.co
                   </ContactLink>
-                  <ContactLink href="tel:+61435544559" icon={<Phone className="h-4 w-4" />}>
-                  +61 435 544 559
+                  <ContactLink href="tel:+628117576088" icon={<Phone className="h-4 w-4" />}>
+                    +62 811 757 6088
                   </ContactLink>
                 </div>
                 <ContactLink

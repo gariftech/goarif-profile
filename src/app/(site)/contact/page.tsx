@@ -72,9 +72,9 @@ export default function ContactPage() {
               <span>care@goarif.co</span>
             </Link>
 
-            <Link href="tel:+61435544559" className="flex items-center space-x-3">
+            <Link href="tel:+628117576088" className="flex items-center space-x-3">
               <Phone className="h-5 w-5 text-muted-foreground" />
-              <span>+61 435 544 559</span>
+              <span>+62 811 757 6088</span>
             </Link>
           </div>
         </div>
