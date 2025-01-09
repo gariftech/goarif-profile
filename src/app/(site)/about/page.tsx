@@ -18,7 +18,7 @@ export default function AboutPage() {
           if you are:
         </p>
 
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 space-y-1">
           <li>
             <strong>Marketing Professionals:</strong> managers and brand managers, who need to
             understand consumer behavior, segment their audience, and market sentiments
@@ -41,7 +41,7 @@ export default function AboutPage() {
 
         <p>Ready to Experience Arif? Take the first step towards smarter data-driven decisions:</p>
 
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 space-y-1">
           <li>
             <strong>Try It Free:</strong> Explore Arif&apos;s features at no cost. Get Started Now.
           </li>
