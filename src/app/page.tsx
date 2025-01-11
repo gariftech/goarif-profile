@@ -6,6 +6,7 @@ import Hero from './home/hero'
 import HowItWork from './home/how-it-work'
 import Stats from './home/stats'
 import Testimony from './home/testimony'
+import Started from './home/started'
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
 
         {/* FAQ Section */}
         <Faq />
+
+        {/* Started Section */}
+        <Started />
       </div>
     </Layout>
   )
