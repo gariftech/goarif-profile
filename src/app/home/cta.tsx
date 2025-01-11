@@ -7,7 +7,7 @@ import Ripple from '~/components/ui/ripple'
 
 export default function Cta() {
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-20 bg-gradient-to-br from-gray-10 via-gray-50 to-purple-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-2xl border bg-background md:shadow-xl">
           <div className="z-10 w-full bg-indigo-600 rounded-2xl p-8 md:p-16 whitespace-pre-wrap text-center">

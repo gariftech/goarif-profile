@@ -120,7 +120,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* About Us */}
             <div className="col-span-1 md:col-span-2">
-              <h2 className="text-2xl font-bold mb-4 text-white">Go Arif</h2>
+              <h2 className="text-2xl font-bold mb-4 text-white">
+                <Link href="/" className="hover:underline hover:text-indigo-500">
+                  Arif
+                </Link>
+              </h2>
               <p className="mb-4">
                 Empowering businesses with data-driven decisions. Our expert team of analysts
                 transforms raw data into actionable insights.
@@ -213,7 +217,11 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="mt-8 text-center text-sm text-gray-500">
-            © {new Date().getFullYear()} ARIF Research Labs. All rights reserved.
+            © {new Date().getFullYear()}{' '}
+            <Link href="/" className="hover:underline hover:text-indigo-500">
+              ARIF
+            </Link>{' '}
+            Research Labs. All rights reserved.
           </div>
         </div>
       </div>

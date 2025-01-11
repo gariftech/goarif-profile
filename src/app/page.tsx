@@ -4,9 +4,9 @@ import Faq from './home/faq'
 import Features from './home/features'
 import Hero from './home/hero'
 import HowItWork from './home/how-it-work'
+import Started from './home/started'
 import Stats from './home/stats'
 import Testimony from './home/testimony'
-import Started from './home/started'
 
 export default function Home() {
   return (
@@ -24,17 +24,17 @@ export default function Home() {
         {/* How It Works Section */}
         <HowItWork />
 
+        {/* Started Section */}
+        <Started />
+
         {/* Testimony Section */}
         <Testimony />
-
-        {/* CTA Section */}
-        <Cta />
 
         {/* FAQ Section */}
         <Faq />
 
-        {/* Started Section */}
-        <Started />
+        {/* CTA Section */}
+        <Cta />
       </div>
     </Layout>
   )
