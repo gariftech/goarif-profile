@@ -36,9 +36,9 @@ yarn.lock
 
 # env files (can opt-in for committing if needed)
 .env
-.env-local*
-.env-staging*
-.env-production*
+.env.local*
+.env.staging*
+.env.production*
 
 # vercel
 .vercel
