@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/gariftech/goarif-profile/compare/v0.1.8...v0.1.9) (2025-01-12)
+
+
+### Features
+
+* add logo font ([2619bdd](https://github.com/gariftech/goarif-profile/commit/2619bdd961ecf8720dc83a6ef74e810c63c54a13))
+* add side features ([4ce905c](https://github.com/gariftech/goarif-profile/commit/4ce905ca1da7dd98aedc018c6029b1f1cc80624f))
+* add static images ([279fae2](https://github.com/gariftech/goarif-profile/commit/279fae2d5a4bbc8744c56da2af85064fc9528794))
+
+
+### Bug Fixes
+
+* improve landing page ([f2f9028](https://github.com/gariftech/goarif-profile/commit/f2f902896796a9c6e5c094aa402c1b888f3c5367))
+
 ### [0.1.8](https://github.com/gariftech/goarif-profile/compare/v0.1.7...v0.1.8) (2025-01-12)
 
 
