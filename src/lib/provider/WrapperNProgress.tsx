@@ -9,7 +9,7 @@ export default function WrapperNProgress({ children }: IProps) {
   return (
     <>
       {children}
-      <ProgressBar height="4px" color="#6366f1" options={{ showSpinner: true }} shallowRouting />
+      <ProgressBar height="4px" color="#818cf8" options={{ showSpinner: true }} shallowRouting />
     </>
   )
 }
