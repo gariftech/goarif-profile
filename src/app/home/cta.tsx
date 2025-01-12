@@ -32,7 +32,7 @@ export default function Cta() {
             >
               <strong>Security:</strong> Robust encryption, access controls, and regular audits.
               <br />
-              <strong>Compliance:</strong> Adheres to the GDPR regulations.
+              <strong>Compliance:</strong> Adheres to the GDPR and PDP regulations.
               <br />
               <strong>User Control:</strong> You control your data and its use.
               <br />

@@ -49,9 +49,9 @@ const features = [
   },
   {
     icon: User,
-    title: 'Customer Segment',
+    title: 'Customer Segmentation',
     description:
-      'Segmentation fosters stronger customer relationships through personalized experiences, driving loyalty.',
+      'Focus efforts on the most promising segments, driving higher conversion rates and better return on investment.',
   },
   {
     icon: IconAnalyze,
@@ -61,14 +61,14 @@ const features = [
   },
   {
     icon: IconReport,
-    title: 'Visualization Report',
+    title: 'Visualization & Reporting',
     description:
       'Use powerful visualization tools and report template to effectively communicate findings.',
   },
   {
     icon: Languages,
     title: 'Transcribe & Translate',
-    description: 'AI accelerates the process, significantly lowering costs.',
+    description: 'Automating transcription with AI minimizes the need for human labor, improving cost efficiency.',
   },
 ]
 
@@ -85,7 +85,7 @@ export default function Features() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
             >
-              Empowering Your Data Journey
+              Empowering Your Data Journey with AI
             </motion.h2>
 
             <motion.p
