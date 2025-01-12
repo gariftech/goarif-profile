@@ -35,8 +35,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Your Personal
-            <span className="text-indigo-600"> Data Analyst</span>
+            <span className="text-[5rem] font-nevia font-medium text-indigo-600 tracking-wide">
+              ARIF
+            </span>
+            {' - '}
+            <span>Your Personal Data Analyst</span>
           </motion.h2>
 
           <motion.p

@@ -65,7 +65,9 @@ export default function Started() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
             >
-              Ready to Experience Arif?
+              Ready to Experience{' '}
+              <span className="text-[3rem] font-nevia text-indigo-600 tracking-wide">ARIF</span>
+              &nbsp;?
             </motion.h2>
 
             <motion.p

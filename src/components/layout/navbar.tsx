@@ -107,8 +107,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold hover:underline hover:text-indigo-500">
-              Arif
+            <Link
+              href="/"
+              className="text-[2.5rem] text-indigo-600 font-bold tracking-wide hover:text-indigo-500 font-nevia"
+            >
+              ARIF
             </Link>
           </div>
 
