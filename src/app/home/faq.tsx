@@ -30,10 +30,6 @@ const faqs = [
     answer: 'Absolutely. Arif is built to efficiently manage and scale your data needs.',
   },
   {
-    question: 'Can I collaborate with my team?',
-    answer: 'Seamless collaboration features let teams share insights and work together.',
-  },
-  {
     question: 'What does it cost?',
     answer: 'Flexible subscription plans and pay-as-you-go options to suit every need.',
   },

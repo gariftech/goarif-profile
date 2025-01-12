@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Nunito Sans', 'sans-serif'],
+        nevia: ['NeviaSans', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

@@ -121,8 +121,11 @@ export default function Footer() {
             {/* About Us */}
             <div className="col-span-1 md:col-span-2">
               <h2 className="text-2xl font-bold mb-4 text-white">
-                <Link href="/" className="hover:underline hover:text-indigo-500">
-                  Arif
+                <Link
+                  href="/"
+                  className="text-[2.5rem] hover:text-indigo-500 font-nevia tracking-wide"
+                >
+                  ARIF
                 </Link>
               </h2>
               <p className="mb-4">

@@ -6,7 +6,7 @@ import Hero from './home/hero'
 import HowItWork from './home/how-it-work'
 import Started from './home/started'
 import Stats from './home/stats'
-import Testimony from './home/testimony'
+import SideFeatures from './home/side-features'
 
 export default function Home() {
   return (
@@ -21,6 +21,9 @@ export default function Home() {
         {/* Features Section */}
         <Features />
 
+        {/* Side Features */}
+        <SideFeatures />
+
         {/* How It Works Section */}
         <HowItWork />
 
@@ -28,7 +31,7 @@ export default function Home() {
         <Started />
 
         {/* Testimony Section */}
-        <Testimony />
+        {/* <Testimony /> */}
 
         {/* FAQ Section */}
         <Faq />
