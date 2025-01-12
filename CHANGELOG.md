@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/gariftech/goarif-profile/compare/v0.1.7...v0.1.8) (2025-01-12)
+
+
+### Features
+
+* add provider ([e41dc06](https://github.com/gariftech/goarif-profile/commit/e41dc064e57895b9a9875172213a66a885bf7962))
+
+
+### Bug Fixes
+
+* improve typewriting ([a461830](https://github.com/gariftech/goarif-profile/commit/a461830cc4cfe6757407865dd107ab05f8a1f671))
+* minor ([95169ba](https://github.com/gariftech/goarif-profile/commit/95169ba3bf819537d81fd4baefd8bac1f338d9ce))
+* update gitignore ([8ab1271](https://github.com/gariftech/goarif-profile/commit/8ab127143ac72494f9fc8c3769aea2034b4addd3))
+
 ### [0.1.7](https://github.com/gariftech/goarif-profile/compare/v0.1.6...v0.1.7) (2025-01-11)
 
 
