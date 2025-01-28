@@ -11,15 +11,11 @@ import { Input } from '../ui/input'
 
 const services = [
   {
+    title: 'Data Cleaning',
+    link: '#',
+  },
+  {
     title: 'Data Visualization',
-    link: '#',
-  },
-  {
-    title: 'Predictive Analytics',
-    link: '#',
-  },
-  {
-    title: 'Business Intelligence',
     link: '#',
   },
   {
@@ -27,7 +23,11 @@ const services = [
     link: '#',
   },
   {
-    title: 'Data Cleaning',
+    title: 'Business Intelligence ',
+    link: '#',
+  },
+  {
+    title: 'Predictive Analysis',
     link: '#',
   },
 ]
@@ -38,34 +38,26 @@ const resources = [
     link: '#',
   },
   {
-    title: 'Whitepapers',
-    link: '#',
-  },
-  {
     title: 'Case Studies',
     link: '#',
   },
   {
-    title: 'Webinars',
+    title: 'Whitepapers',
     link: '#',
   },
   {
-    title: 'Help Center',
+    title: 'Knowledge Base',
+    link: '#',
+  },
+  {
+    title: 'Tutorial',
     link: '#',
   },
 ]
 
 const tools = [
   {
-    title: 'Tableau',
-    link: '#',
-  },
-  {
-    title: 'Power BI',
-    link: '#',
-  },
-  {
-    title: 'Excel',
+    title: 'Python',
     link: '#',
   },
   {
@@ -73,10 +65,19 @@ const tools = [
     link: '#',
   },
   {
-    title: 'R',
+    title: 'LLM',
+    link: '#',
+  },
+  {
+    title: 'RAG',
+    link: '#',
+  },
+  {
+    title: 'LangChain',
     link: '#',
   },
 ]
+
 
 const socialMedia = [
   {
@@ -129,8 +130,7 @@ export default function Footer() {
                 </Link>
               </h2>
               <p className="mb-4">
-                Empowering businesses with data-driven decisions. Our expert team of analysts
-                transforms raw data into actionable insights.
+                Turn insights into business decisions, better, faster, cost efficient.
               </p>
               <form className="flex flex-col sm:flex-row gap-2">
                 <Input
