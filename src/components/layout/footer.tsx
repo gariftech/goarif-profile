@@ -4,7 +4,7 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
 } from '@tabler/icons-react'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
@@ -77,7 +77,6 @@ const tools = [
     link: '#',
   },
 ]
-
 
 const socialMedia = [
   {
@@ -195,9 +194,9 @@ export default function Footer() {
                   <ContactLink href="mailto:care@goarif.co" icon={<Mail className="h-4 w-4" />}>
                     care@goarif.co
                   </ContactLink>
-                  <ContactLink href="tel:+628117576088" icon={<Phone className="h-4 w-4" />}>
+                  {/* <ContactLink href="tel:+628117576088" icon={<Phone className="h-4 w-4" />}>
                     +62 811 757 6088
-                  </ContactLink>
+                  </ContactLink> */}
                 </div>
                 <ContactLink
                   href="https://maps.app.goo.gl/heQ4eFbBrmCz29rM6"
