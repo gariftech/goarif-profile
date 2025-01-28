@@ -4,22 +4,18 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
 } from '@tabler/icons-react'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 
 const services = [
   {
+    title: 'Data Cleaning',
+    link: '#',
+  },
+  {
     title: 'Data Visualization',
-    link: '#',
-  },
-  {
-    title: 'Predictive Analytics',
-    link: '#',
-  },
-  {
-    title: 'Business Intelligence',
     link: '#',
   },
   {
@@ -27,7 +23,11 @@ const services = [
     link: '#',
   },
   {
-    title: 'Data Cleaning',
+    title: 'Business Intelligence ',
+    link: '#',
+  },
+  {
+    title: 'Predictive Analysis',
     link: '#',
   },
 ]
@@ -38,34 +38,26 @@ const resources = [
     link: '#',
   },
   {
-    title: 'Whitepapers',
-    link: '#',
-  },
-  {
     title: 'Case Studies',
     link: '#',
   },
   {
-    title: 'Webinars',
+    title: 'Whitepapers',
     link: '#',
   },
   {
-    title: 'Help Center',
+    title: 'Knowledge Base',
+    link: '#',
+  },
+  {
+    title: 'Tutorial',
     link: '#',
   },
 ]
 
 const tools = [
   {
-    title: 'Tableau',
-    link: '#',
-  },
-  {
-    title: 'Power BI',
-    link: '#',
-  },
-  {
-    title: 'Excel',
+    title: 'Python',
     link: '#',
   },
   {
@@ -73,7 +65,15 @@ const tools = [
     link: '#',
   },
   {
-    title: 'R',
+    title: 'LLM',
+    link: '#',
+  },
+  {
+    title: 'RAG',
+    link: '#',
+  },
+  {
+    title: 'LangChain',
     link: '#',
   },
 ]
@@ -129,8 +129,7 @@ export default function Footer() {
                 </Link>
               </h2>
               <p className="mb-4">
-                Empowering businesses with data-driven decisions. Our expert team of analysts
-                transforms raw data into actionable insights.
+                Turn insights into business decisions, better, faster, cost efficient.
               </p>
               <form className="flex flex-col sm:flex-row gap-2">
                 <Input
@@ -195,9 +194,9 @@ export default function Footer() {
                   <ContactLink href="mailto:care@goarif.co" icon={<Mail className="h-4 w-4" />}>
                     care@goarif.co
                   </ContactLink>
-                  <ContactLink href="tel:+628117576088" icon={<Phone className="h-4 w-4" />}>
+                  {/* <ContactLink href="tel:+628117576088" icon={<Phone className="h-4 w-4" />}>
                     +62 811 757 6088
-                  </ContactLink>
+                  </ContactLink> */}
                 </div>
                 <ContactLink
                   href="https://maps.app.goo.gl/heQ4eFbBrmCz29rM6"
