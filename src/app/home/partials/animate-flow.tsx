@@ -43,9 +43,9 @@ export function AnimateFlow({ className }: { className?: string }) {
     >
       <div className="flex size-full max-w-2xl flex-row items-stretch justify-between gap-6">
         <div className="flex flex-col justify-center">
-          <Circle ref={div7Ref}>
-            <Icons.user />
-          </Circle>
+            <div ref={div7Ref}>
+              <img src="/diagram/user.png" alt="User" width={48} height={48} />
+            </div>
         </div>
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-18">
@@ -53,25 +53,22 @@ export function AnimateFlow({ className }: { className?: string }) {
           </Circle>
         </div>
         <div className="flex flex-col justify-center gap-2">
-          <Circle ref={div1Ref}>
-            <Icons.excel />
-          </Circle>
-          <Circle ref={div2Ref}>
-            <Icons.python />
-          </Circle>
-          <Circle ref={div3Ref}>
-            <Icons.openai />
-          </Circle>
+          <div ref={div7Ref}>
+            <img src="/diagram/input1.png" alt="User" width={48} height={48} />
+          </div>
+          <div ref={div7Ref}>
+            <img src="/diagram/input2.png" alt="User" width={48} height={48} />
+          </div>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div4Ref} className="size-18">
-            <IconFileSymlink className="size-8" stroke={1.5} />
-          </Circle>
+            <div ref={div7Ref}>
+              <img src="/diagram/report.png" alt="User" width={48} height={48} />
+            </div>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div5Ref}>
-            <Icons.user />
-          </Circle>
+            <div ref={div7Ref}>
+              <img src="/diagram/user2.png" alt="User" width={48} height={48} />
+            </div>
         </div>
       </div>
 
