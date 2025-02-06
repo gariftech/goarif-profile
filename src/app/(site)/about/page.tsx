@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="container py-10 flex-1">
-      <h1 className="text-4xl font-bold mb-6">About</h1>
+    <section className="container flex-1 py-10">
+      <h1 className="mb-6 text-4xl font-bold">About</h1>
       <Separator className="my-4" />
-      <div className="text-base space-y-4">
+      <div className="space-y-4 text-base">
         <p>
           Arif offers a cost-effective and time-efficient solution for professionals, particularly
           if you are:
         </p>
 
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             <strong>Marketing Professionals:</strong> managers and brand managers, who need to
             understand consumer behavior, segment their audience, and market sentiments
@@ -41,7 +41,7 @@ export default function AboutPage() {
 
         <p>Ready to Experience Arif? Take the first step towards smarter data-driven decisions:</p>
 
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             <strong>Try It Free:</strong> Explore Arif&apos;s features at no cost. Get Started Now.
           </li>

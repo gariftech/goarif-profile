@@ -21,11 +21,11 @@ const stats = [
 export default function Stats() {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
-      <div className="z-10 w-full bg-indigo-600 p-8 md:p-16 whitespace-pre-wrap text-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="z-10 w-full whitespace-pre-wrap bg-indigo-600 p-8 text-center md:p-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Ripple className="text-gray-200" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
@@ -34,8 +34,8 @@ export default function Stats() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
               >
-                <div className="text-4xl font-bold text-white mb-2">{stat.title}</div>
-                <div className="text-indigo-200 font-semibold">{stat.description}</div>
+                <div className="mb-2 text-4xl font-bold text-white">{stat.title}</div>
+                <div className="font-semibold text-indigo-200">{stat.description}</div>
               </motion.div>
             ))}
           </div>

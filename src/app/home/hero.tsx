@@ -9,10 +9,10 @@ import { cn } from '~/lib/utils'
 export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-indigo-100 via-white to-purple-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="mx-auto max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
         <div className="text-center">
           <motion.div
-            className="z-10 flex mb-4 items-center justify-center"
+            className="z-10 mb-4 flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -30,12 +30,12 @@ export default function Hero() {
           </motion.div>
 
           <motion.h2
-            className="text-5xl font-bold text-gray-900 mb-6"
+            className="mb-6 text-5xl font-bold text-gray-900"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-[5rem] font-nevia font-medium text-indigo-600 tracking-wide">
+            <span className="font-nevia text-[5rem] font-medium tracking-wide text-indigo-600">
               ARIF
             </span>
             {' - '}
@@ -43,7 +43,7 @@ export default function Hero() {
           </motion.h2>
 
           <motion.p
-            className="text-xl text-gray-600 max-w-2xl mx-auto mb-8"
+            className="mx-auto mb-8 max-w-2xl text-xl text-gray-600"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -64,7 +64,7 @@ export default function Hero() {
             >
               <Link
                 href="#"
-                className="px-8 py-2 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
+                className="rounded-xl bg-indigo-600 px-8 py-2 font-semibold text-white transition-colors hover:bg-indigo-700"
               >
                 Try it Now
               </Link>

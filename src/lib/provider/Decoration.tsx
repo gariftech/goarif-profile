@@ -4,7 +4,7 @@ import WrapperNProgress from './WrapperNProgress'
 
 type IProps = PropsWithChildren
 
-export default function Provider({ children }: IProps) {
+export default function Decoration({ children }: IProps) {
   return (
     <WrapperNProgress>
       {children}
