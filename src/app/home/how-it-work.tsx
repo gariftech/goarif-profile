@@ -8,12 +8,12 @@ import { cn } from '~/lib/utils'
 const features = [
   {
     icon: WandSparkles,
-    title: 'Upload a guide',
-    description: 'Add your discussion guide to Outset and customize your AI interviewer.',
+    title: 'Upload your data',
+    description: 'Excel, csv, PDF, PowerPoint, Word, audio and video files.',
   },
   {
     icon: UsersRound,
-    title: 'Recruit your participants',
+    title: 'Run your analysis',
     description:
       'Take advantage of pre-built templates and guided prompts customized for your field.',
   },
@@ -43,30 +43,25 @@ export default function HowItWork() {
             Whether you’re solving business challenges or conducting groundbreaking research, Arif
             is here to help you every step of the way.{' '}
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {features.map((item, index) => {
-              const isLastItem = index === features.length - 1
-              return (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
-                  className={cn(
-                    'p-6 hover:bg-white rounded-xl h-full flex flex-col items-center justify-center hover:shadow-xl transition-all duration-500',
-                    isLastItem && 'md:col-start-2'
-                  )}
-                >
-                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <item.icon className="w-6 h-6 text-indigo-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-center">{item.description}</p>
-                </motion.div>
-              )
-            })}
-          </div>
+            <div className="flex flex-wrap gap-4 justify-center">
+            {features.map((item, index) => (
+              <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+              className="p-6 hover:bg-white rounded-xl flex-1 min-w-[250px] max-w-[300px] flex flex-col items-center justify-center hover:shadow-xl transition-all duration-500"
+              >
+              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                <item.icon className="w-6 h-6 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-600 text-center">{item.description}</p>
+              </motion.div>
+            ))}
+            </div>
+
 
           <AnimateFlow />
         </div>
