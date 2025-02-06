@@ -106,7 +106,7 @@ const ContactLink = ({
   icon: React.ReactNode
   children: React.ReactNode
 }) => (
-  <Link href={href} className="flex items-center gap-2 hover:text-white transition-colors">
+  <Link href={href} className="flex items-center gap-2 transition-colors hover:text-white">
     {icon}
     <span>{children}</span>
   </Link>
@@ -114,16 +114,16 @@ const ContactLink = ({
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+    <footer className="bg-gray-900 px-4 py-12 text-gray-300">
       <div className="container mx-auto">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
             {/* About Us */}
             <div className="col-span-1 md:col-span-2">
-              <h2 className="text-2xl font-bold mb-4 text-white">
+              <h2 className="mb-4 text-2xl font-bold text-white">
                 <Link
                   href="/"
-                  className="text-[2.5rem] hover:text-indigo-500 font-nevia tracking-wide"
+                  className="font-nevia text-[2.5rem] tracking-wide hover:text-indigo-500"
                 >
                   ARIF
                 </Link>
@@ -131,7 +131,7 @@ export default function Footer() {
               <p className="mb-4">
                 Turn insights into business decisions, better, faster, cost efficient.
               </p>
-              <form className="flex flex-col sm:flex-row gap-2">
+              <form className="flex flex-col gap-2 sm:flex-row">
                 <Input
                   type="email"
                   placeholder="Enter your email"
@@ -145,11 +145,11 @@ export default function Footer() {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">Services</h3>
               <ul className="space-y-2">
                 {services.map((service, index) => (
                   <li key={index}>
-                    <Link href={service.link} className="hover:text-white transition-colors">
+                    <Link href={service.link} className="transition-colors hover:text-white">
                       {service.title}
                     </Link>
                   </li>
@@ -159,11 +159,11 @@ export default function Footer() {
 
             {/* Resources */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-white">Resources</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">Resources</h3>
               <ul className="space-y-2">
                 {resources.map((resource, index) => (
                   <li key={index}>
-                    <Link href={resource.link} className="hover:text-white transition-colors">
+                    <Link href={resource.link} className="transition-colors hover:text-white">
                       {resource.title}
                     </Link>
                   </li>
@@ -173,11 +173,11 @@ export default function Footer() {
 
             {/* Tools */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-white">Tools We Use</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">Tools We Use</h3>
               <ul className="space-y-2">
                 {tools.map((tool, index) => (
                   <li key={index}>
-                    <Link href={tool.link} className="hover:text-white transition-colors">
+                    <Link href={tool.link} className="transition-colors hover:text-white">
                       {tool.title}
                     </Link>
                   </li>
@@ -187,7 +187,7 @@ export default function Footer() {
           </div>
 
           {/* Contact and Social */}
-          <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+          <div className="mt-8 flex flex-col items-center justify-between border-t border-gray-700 pt-8 md:flex-row">
             <div className="flex flex-col gap-2">
               <div className="flex flex-col gap-2">
                 <div className="flex flex-row gap-4">
@@ -208,9 +208,9 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex space-x-4 mt-4 sm:mt-0">
+            <div className="mt-4 flex space-x-4 sm:mt-0">
               {socialMedia.map((item, index) => (
-                <Link href={item.link} className="hover:text-white transition-colors" key={index}>
+                <Link href={item.link} className="transition-colors hover:text-white" key={index}>
                   {item.icon}
                 </Link>
               ))}
@@ -220,7 +220,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="mt-8 text-center text-sm text-gray-500">
             © {new Date().getFullYear()}{' '}
-            <Link href="/" className="hover:underline hover:text-indigo-500">
+            <Link href="/" className="hover:text-indigo-500 hover:underline">
               ARIF
             </Link>{' '}
             Research Labs. All rights reserved.

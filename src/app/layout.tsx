@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Nunito_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
-import Provider from '~/lib/provider'
+import Decoration from '~/lib/provider/Decoration'
 
 const NunitoSans = Nunito_Sans({
   subsets: ['latin'],
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(NunitoSans.className, NeviaSans.variable, `antialiased`)}>
-        <Provider>{children}</Provider>
+        <Decoration>{children}</Decoration>
       </body>
     </html>
   )

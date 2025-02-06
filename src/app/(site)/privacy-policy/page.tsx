@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="container py-10 flex-1">
-      <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
+    <section className="container flex-1 py-10">
+      <h1 className="mb-6 text-4xl font-bold">Privacy Policy</h1>
       <Separator className="my-4" />
       <div className="prose prose-gray dark:prose-invert max-w-none space-y-4">
         <p className="text-lg">
@@ -25,9 +25,9 @@ export default function PrivacyPolicyPage() {
           Goarif.
         </p>
 
-        <h2 className="text-xl font-bold mt-8">1. Information We Collect</h2>
+        <h2 className="mt-8 text-xl font-bold">1. Information We Collect</h2>
         <p className="font-semibold">Information You Provide:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Account Information: When you create an Arif account, we may collect information such as
             your name, email address, and company name.
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
         </ul>
 
         <p className="font-semibold">Information We Automatically Collect:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Usage Data: We may collect information about how you use the Platform, such as the
             features you access, the pages you visit, and the actions you take.
@@ -59,9 +59,9 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">2. How We Use Your Information</h2>
+        <h2 className="mt-8 text-xl font-bold">2. How We Use Your Information</h2>
         <p>We use the information we collect to:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Provide and maintain the Platform: Deliver the Arif platform and its features to you.
           </li>
@@ -79,9 +79,9 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">3. Data Sharing and Disclosure </h2>
+        <h2 className="mt-8 text-xl font-bold">3. Data Sharing and Disclosure </h2>
         <p className="font-semibold">We may share your information with:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Confidentiality: your data will not be used for AI training or shared with third parties
             without your consent.
@@ -105,22 +105,22 @@ export default function PrivacyPolicyPage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">4. Data Security</h2>
+        <h2 className="mt-8 text-xl font-bold">4. Data Security</h2>
         <p>
           We take reasonable measures to protect your information from unauthorized access, use, or
           disclosure. However, no method of transmission over the internet or method of electronic
           storage is completely secure.
         </p>
 
-        <h2 className="text-xl font-bold mt-8">5. Data Retention</h2>
+        <h2 className="mt-8 text-xl font-bold">5. Data Retention</h2>
         <p>
           We retain your information for as long as necessary to fulfill the purposes outlined in
           this Privacy Policy or as required by law.
         </p>
 
-        <h2 className="text-xl font-bold mt-8">6. Your Rights</h2>
+        <h2 className="mt-8 text-xl font-bold">6. Your Rights</h2>
         <p>You may have certain rights regarding your information, such as the right to:</p>
-        <ul className="list-disc pl-6 space-y-1">
+        <ul className="list-disc space-y-1 pl-6">
           <li>Access your personal information. </li>
           <li>Request correction of inaccurate information. </li>
           <li>Request deletion of your personal information. </li>
@@ -132,25 +132,25 @@ export default function PrivacyPolicyPage() {
           To exercise these rights, please contact us at{' '}
           <Link
             href="mailto:care@goarif.co"
-            className="text-indigo-600 hover:underline hover:text-indigo-500"
+            className="text-indigo-600 hover:text-indigo-500 hover:underline"
           >
             care@goarif.co
           </Link>
         </p>
 
-        <h2 className="text-xl font-bold mt-8">7. Changes to this Privacy Policy</h2>
+        <h2 className="mt-8 text-xl font-bold">7. Changes to this Privacy Policy</h2>
         <p>
           We may update this Privacy Policy from time to time. We will notify you of any material
           changes by posting the updated policy on our website and, if necessary, by other means
           such as email.
         </p>
 
-        <h2 className="text-xl font-bold mt-8">8. Contact Us</h2>
+        <h2 className="mt-8 text-xl font-bold">8. Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, please contact us at{' '}
           <Link
             href="mailto:care@goarif.co"
-            className="text-indigo-600 hover:underline hover:text-indigo-500"
+            className="text-indigo-600 hover:text-indigo-500 hover:underline"
           >
             care@goarif.co
           </Link>

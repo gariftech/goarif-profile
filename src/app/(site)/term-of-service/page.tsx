@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function TermOfServicePage() {
   return (
-    <section className="container py-10 flex-1">
-      <h1 className="text-4xl font-bold mb-6">Terms of Service</h1>
+    <section className="container flex-1 py-10">
+      <h1 className="mb-6 text-4xl font-bold">Terms of Service</h1>
       <Separator className="my-4" />
       <div className="prose prose-gray dark:prose-invert max-w-none space-y-4">
         <p className="text-lg">
@@ -22,8 +22,8 @@ export default function TermOfServicePage() {
           Welcome to Arif! By using our platform, you agree to the following Terms and Conditions.
           Please read them carefully.
         </p>
-        <h2 className="text-xl font-bold mt-8">1. Definitions</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">1. Definitions</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>{`"Platform" refers to the Arif application, website, and related services.`}</li>
           <li>{`"User" refers to any individual or entity using the Platform.`}</li>
           <li>
@@ -31,13 +31,13 @@ export default function TermOfServicePage() {
             Platform.`}
           </li>
         </ul>
-        <h2 className="text-xl font-bold mt-8">2. Acceptance of Terms</h2>
+        <h2 className="mt-8 text-xl font-bold">2. Acceptance of Terms</h2>
         <p>
           By accessing or using the Platform, you confirm that you have read, understood, and agreed
           to these Terms and Conditions. If you do not agree, you must not use the Platform.
         </p>
-        <h2 className="text-xl font-bold mt-8">3. User Responsibilities</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">3. User Responsibilities</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Account Security: Users are responsible for maintaining the confidentiality of their
             account credentials and are liable for all activities under their account.
@@ -51,14 +51,14 @@ export default function TermOfServicePage() {
             Platform.
           </li>
         </ul>
-        <h2 className="text-xl font-bold mt-8">4. Platform Usage</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">4. Platform Usage</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             License: Arif grants Users a non-exclusive, non-transferable license to use the
             Platform.
           </li>
           <li>Prohibited Activities: Users may not:</li>
-          <ul className="list-disc pl-6 space-y-1">
+          <ul className="list-disc space-y-1 pl-6">
             <li>Reverse-engineer or attempt to access the Platform’s source code.</li>
             <li>Use the Platform for unlawful activities.</li>
             <li>Share login credentials or allow unauthorized access.</li>
@@ -69,8 +69,8 @@ export default function TermOfServicePage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">5. Fees and Payments</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">5. Fees and Payments</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>Subscription Plans: Users must pay subscription fees based on the chosen plan.</li>
           <li>Billing: Payments are due as specified during subscription signup.</li>
           <li>
@@ -79,8 +79,8 @@ export default function TermOfServicePage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">6. Intellectual Property</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">6. Intellectual Property</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Ownership: Arif retains all rights, title, and interest in the Platform and its Content.
           </li>
@@ -92,8 +92,8 @@ export default function TermOfServicePage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">7. Data Privacy</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">7. Data Privacy</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             Security: Arif implements industry-standard security measures to protect User data.
           </li>
@@ -103,8 +103,8 @@ export default function TermOfServicePage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">8. Limitation of Liability</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">8. Limitation of Liability</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>
             {`No Warranty: The Platform is provided "as is," without warranties of any kind.`}
           </li>
@@ -118,8 +118,8 @@ export default function TermOfServicePage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">9. Termination</h2>
-        <ul className="list-disc pl-6 space-y-1">
+        <h2 className="mt-8 text-xl font-bold">9. Termination</h2>
+        <ul className="list-disc space-y-1 pl-6">
           <li>By User: Users may terminate their account at any time.</li>
           <li>
             By Arif: Arif may suspend or terminate access for violations of these Terms or other
@@ -127,26 +127,26 @@ export default function TermOfServicePage() {
           </li>
         </ul>
 
-        <h2 className="text-xl font-bold mt-8">10. Governing Law</h2>
+        <h2 className="mt-8 text-xl font-bold">10. Governing Law</h2>
         <p>
           These Terms are governed by and construed in accordance with the laws of the State of the
           Republic of Indonesia, and any legal action arising from or related to these Terms shall
           be filed only in the courts located in the Republic of Indonesia.
         </p>
 
-        <h2 className="text-xl font-bold mt-8">11. Changes to Terms</h2>
+        <h2 className="mt-8 text-xl font-bold">11. Changes to Terms</h2>
         <p>
           Arif reserves the right to update these Terms and Conditions. Users will be notified of
           significant changes and their continued use of the Platform constitutes acceptance of the
           updated Terms.
         </p>
 
-        <h2 className="text-xl font-bold mt-8">12. Contact Information</h2>
+        <h2 className="mt-8 text-xl font-bold">12. Contact Information</h2>
         <p>
           For questions about these Terms and Conditions, contact us at:{' '}
           <Link
             href="mailto:care@goarif.co"
-            className="text-indigo-600 hover:underline hover:text-indigo-500"
+            className="text-indigo-600 hover:text-indigo-500 hover:underline"
           >
             care@goarif.co
           </Link>

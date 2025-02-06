@@ -89,11 +89,11 @@ const ReviewCard = ({
 
 export default function Testimony() {
   return (
-    <div className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-background py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Testimony</h2>
-          <p className="text-xl text-gray-600 mb-10">What others say</p>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">Testimony</h2>
+          <p className="mb-10 text-xl text-gray-600">What others say</p>
 
           <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
             <Marquee pauseOnHover className="[--duration:20s]">

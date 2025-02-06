@@ -18,13 +18,13 @@ export function StartedCard({ title, description, buttonText, shadow }: IProps) 
   return (
     <div
       className={clsx(
-        'p-6 bg-white rounded-xl h-full w-full',
-        shadow && 'shadow-md hover:shadow-xl transition-shadow'
+        'h-full w-full rounded-xl bg-white p-6',
+        shadow && 'shadow-md transition-shadow hover:shadow-xl'
       )}
     >
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <button className="w-full py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200">
+      <h3 className="mb-2 text-xl font-semibold">{title}</h3>
+      <p className="mb-4 text-gray-600">{description}</p>
+      <button className="w-full rounded-lg bg-indigo-600 px-4 py-2 text-white transition-colors duration-200 hover:bg-indigo-700">
         {buttonText}
       </button>
     </div>
@@ -55,23 +55,23 @@ const features = [
 export default function Started() {
   return (
     <>
-      <div className="py-20 bg-gradient-to-br from-purple-100 via-gray-100 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <div className="bg-gradient-to-br from-purple-100 via-gray-100 to-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-center">
             <motion.h2
-              className="text-3xl font-bold text-gray-900 mb-4"
+              className="mb-4 text-3xl font-bold text-gray-900"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
             >
               Ready to Experience{' '}
-              <span className="text-[3rem] font-nevia text-indigo-600 tracking-wide">ARIF</span>
+              <span className="font-nevia text-[3rem] tracking-wide text-indigo-600">ARIF</span>
               &nbsp;?
             </motion.h2>
 
             <motion.p
-              className="text-xl text-gray-600 max-w-2xl mx-auto"
+              className="mx-auto max-w-2xl text-xl text-gray-600"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -80,7 +80,7 @@ export default function Started() {
               Take the first step towards smarter data-driven decisions
             </motion.p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {features.map((feature, index) => {
               return (
                 <motion.div
@@ -91,10 +91,10 @@ export default function Started() {
                   transition={{ duration: 0.6, delay: 0.2 * (index + 1) }}
                 >
                   <ShineBorder
-                    className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl p-0"
+                    className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background p-0 md:shadow-xl"
                     color={['#A07CFE', '#FE8FB5', '#FFBE7B']}
                   >
-                    <div className="whitespace-pre-wrap w-full">
+                    <div className="w-full whitespace-pre-wrap">
                       <StartedCard
                         icon={feature.icon}
                         title={feature.title}

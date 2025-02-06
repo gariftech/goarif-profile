@@ -4,9 +4,9 @@ import Faq from './home/faq'
 import Features from './home/features'
 import Hero from './home/hero'
 import HowItWork from './home/how-it-work'
+import SideFeatures from './home/side-features'
 import Started from './home/started'
 import Stats from './home/stats'
-import SideFeatures from './home/side-features'
 
 export default function Home() {
   return (

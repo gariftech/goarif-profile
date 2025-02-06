@@ -5,11 +5,11 @@ import Image from 'next/image'
 
 export default function SideFeatures() {
   return (
-    <div className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-4">Ideal for Professionals</h3>
+    <div className="bg-white py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+          <div className="rounded-lg p-6">
+            <h3 className="mb-4 text-2xl font-semibold">Ideal for Professionals</h3>
             <p className="mb-4">Arif offers a cost-effective and time-efficient solution for:</p>
             <ul className="space-y-3">
               {[
@@ -39,7 +39,7 @@ export default function SideFeatures() {
                   transition={{ duration: 0.6, delay: 0.2 * (index + 1) }}
                 >
                   <svg
-                    className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0"
+                    className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-blue-500"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -59,11 +59,11 @@ export default function SideFeatures() {
               ))}
             </ul>
           </div>
-          <div className="relative h-full w-full min-h-[300px]">
+          <div className="relative h-full min-h-[300px] w-full">
             <Image
               src="/assets/images/businessman-analyze-2.jpg"
               alt="Businessman analyzing data"
-              className="object-cover rounded-lg shadow-md"
+              className="rounded-lg object-cover shadow-md"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               priority

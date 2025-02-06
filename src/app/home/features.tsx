@@ -21,14 +21,14 @@ export function FeatureCard({
   return (
     <div
       className={clsx(
-        'p-6 bg-white rounded-xl h-full',
-        shadow && 'shadow-md hover:shadow-xl transition-shadow'
+        'h-full rounded-xl bg-white p-6',
+        shadow && 'shadow-md transition-shadow hover:shadow-xl'
       )}
     >
-      <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-        <Icon className="w-6 h-6 text-indigo-600" />
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-100">
+        <Icon className="h-6 w-6 text-indigo-600" />
       </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="mb-2 text-xl font-semibold">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   )
@@ -76,11 +76,11 @@ const features = [
 export default function Features() {
   return (
     <>
-      <div className="py-20 bg-gradient-to-br from-purple-100 via-white to-indigo-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <div className="bg-gradient-to-br from-purple-100 via-white to-indigo-100 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-center">
             <motion.h2
-              className="text-3xl font-bold text-gray-900 mb-4"
+              className="mb-4 text-3xl font-bold text-gray-900"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -90,7 +90,7 @@ export default function Features() {
             </motion.h2>
 
             <motion.p
-              className="text-xl text-gray-600 max-w-2xl mx-auto"
+              className="mx-auto max-w-2xl text-xl text-gray-600"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -100,7 +100,7 @@ export default function Features() {
               data
             </motion.p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {features.map((feature, index) => {
               return (
                 <motion.div
@@ -111,7 +111,7 @@ export default function Features() {
                   transition={{ duration: 0.6, delay: 0.2 * (index + 1) }}
                 >
                   <ShineBorder
-                    className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl p-0"
+                    className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background p-0 md:shadow-xl"
                     color={['#A07CFE', '#FE8FB5', '#FFBE7B']}
                   >
                     <div className="whitespace-pre-wrap">

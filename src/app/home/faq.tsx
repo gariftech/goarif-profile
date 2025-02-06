@@ -37,9 +37,9 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="py-20 bg-gray-50">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="faq" className="bg-gray-50 py-20">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-16 text-center">
           <motion.h2
             className="text-3xl font-bold text-gray-900"
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function Faq() {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value={`item-${index}`}>
                   <AccordionTrigger className="text-base">{faq.question}</AccordionTrigger>
-                  <AccordionContent className="text-base text-indigo-900 font-semibold">
+                  <AccordionContent className="text-base font-semibold text-indigo-900">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

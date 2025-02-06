@@ -104,18 +104,18 @@ export default function Navbar() {
 
   return (
     <nav className="border-b bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 justify-between">
           <div className="flex items-center">
             <Link
               href="/"
-              className="text-[2.5rem] text-indigo-600 font-bold tracking-wide hover:text-indigo-500 font-nevia"
+              className="font-nevia text-[2.5rem] font-bold tracking-wide text-indigo-600 hover:text-indigo-500"
             >
               ARIF
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center">
+          <div className="hidden items-center md:flex">
             <NavigationMenu>
               <NavigationMenuList>
                 {menus.map((item) => {
@@ -160,10 +160,10 @@ export default function Navbar() {
             </NavigationMenu>
           </div>
 
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden items-center gap-2 md:flex">
             <Link
               href={login_url}
-              className="text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-4 py-2 rounded-lg"
+              className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             >
               Sign in
             </Link>
@@ -175,9 +175,9 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="flex items-center md:hidden">
             <button
-              className="mobile-menu-button p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="mobile-menu-button rounded-md p-2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               onClick={() => setOpen(!open)}
             >
               <span className="sr-only">Open main menu</span>
@@ -216,7 +216,7 @@ export default function Navbar() {
       </div>
 
       <motion.div
-        className={clsx('md:hidden mobile-menu flex flex-col gap-2')}
+        className={clsx('mobile-menu flex flex-col gap-2 md:hidden')}
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: open ? 1 : 0, height: open ? 'auto' : 0 }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
@@ -227,16 +227,16 @@ export default function Navbar() {
               <li key={item.group}>
                 <Link
                   href="#"
-                  className="block px-6 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                  className="block px-6 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 >
                   {item.group}
                 </Link>
 
-                <ul className="ml-7 space-y-2 relative">
+                <ul className="relative ml-7 space-y-2">
                   {item.items.map((nav) => {
                     return (
                       <li
-                        className="block px-6 py-2 text-sm border-l border-gray-300 text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                        className="block border-l border-gray-300 px-6 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                         key={nav.title}
                       >
                         <Link href={nav.link}>{nav.title}</Link>
@@ -251,14 +251,14 @@ export default function Navbar() {
 
         <Link
           href={login_url}
-          className="block px-6 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+          className="block px-6 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
         >
           Sign in
         </Link>
 
         <Link
           href={register_url}
-          className="block px-6 py-2 text-base font-medium text-indigo-600 hover:text-indigo-700 hover:bg-gray-100"
+          className="block px-6 py-2 text-base font-medium text-indigo-600 hover:bg-gray-100 hover:text-indigo-700"
         >
           Get Started
         </Link>
