@@ -5,16 +5,16 @@ import Ripple from '~/components/ui/ripple'
 
 const stats = [
   {
-    title: '10x',
-    description: 'Faster Analysis',
+    title: '95%',
+    description: 'Faster',
   },
   {
-    title: '10x',
+    title: '90%',
     description: 'Cost Savings',
   },
   {
     title: '24/7',
-    description: 'Accessibility',
+    description: 'Access',
   },
 ]
 
