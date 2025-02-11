@@ -15,10 +15,6 @@ const services = [
     link: '#',
   },
   {
-    title: 'Data Visualization',
-    link: '#',
-  },
-  {
     title: 'Machine Learning',
     link: '#',
   },
@@ -42,10 +38,6 @@ const resources = [
     link: '#',
   },
   {
-    title: 'Whitepapers',
-    link: '#',
-  },
-  {
     title: 'Knowledge Base',
     link: '#',
   },
@@ -58,10 +50,6 @@ const resources = [
 const tools = [
   {
     title: 'Python',
-    link: '#',
-  },
-  {
-    title: 'SQL',
     link: '#',
   },
   {
