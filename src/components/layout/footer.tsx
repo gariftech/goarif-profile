@@ -9,26 +9,22 @@ import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 
-const services = [
+const company = [
   {
-    title: 'Data Cleaning',
+    title: 'About',
+    link: '/about',
+  },
+  {
+    title: 'Careers',
     link: '#',
   },
   {
-    title: 'Data Visualization',
-    link: '#',
+    title: 'Privacy Policy',
+    link: '/privacy-policy',
   },
   {
-    title: 'Machine Learning',
-    link: '#',
-  },
-  {
-    title: 'Business Intelligence ',
-    link: '#',
-  },
-  {
-    title: 'Predictive Analysis',
-    link: '#',
+    title: 'Term of Service',
+    link: '/term-of-service',
   },
 ]
 
@@ -39,10 +35,6 @@ const resources = [
   },
   {
     title: 'Case Studies',
-    link: '#',
-  },
-  {
-    title: 'Whitepapers',
     link: '#',
   },
   {
@@ -58,10 +50,6 @@ const resources = [
 const tools = [
   {
     title: 'Python',
-    link: '#',
-  },
-  {
-    title: 'SQL',
     link: '#',
   },
   {
@@ -143,11 +131,11 @@ export default function Footer() {
               </form>
             </div>
 
-            {/* Services */}
+            {/* Company */}
             <div>
-              <h3 className="mb-4 text-lg font-semibold text-white">Services</h3>
+              <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
               <ul className="space-y-2">
-                {services.map((service, index) => (
+                {company.map((service, index) => (
                   <li key={index}>
                     <Link href={service.link} className="transition-colors hover:text-white">
                       {service.title}

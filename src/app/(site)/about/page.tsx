@@ -20,22 +20,16 @@ export default function AboutPage() {
 
         <ul className="list-disc space-y-1 pl-6">
           <li>
-            <strong>Marketing Professionals:</strong> managers and brand managers, who need to
-            understand consumer behavior, segment their audience, and market sentiments
+            <strong>Marketing Professionals:</strong> managers and brand managers, who need to understand consumer behavior, segment their audience, and market sentiments
           </li>
           <li>
-            <strong>Researchers:</strong> market researchers and academics who require tools for
-            in-depth data analysis, charting and reporting
+            <strong>Researchers:</strong> market researchers and academics who require tools for in-depth data analysis, charting and reporting
           </li>
           <li>
-            <strong>Business Strategists:</strong> brand principals, business analysts, and product
-            managers who need data-driven insights to make informed decisions about product
-            development, market positioning, and growth strategies.
+            <strong>Business Strategists:</strong> brand principals, business analysts, and product managers who need data-driven insights to make informed decisions about product development, market positioning, and growth strategies.
           </li>
           <li>
-            <strong>Public Communicators:</strong> journalists and PR professionals who need to
-            analyze data, track trends, and understand public sentiment to inform their reporting
-            and communication strategies.
+            <strong>Public Communicators:</strong> Journalists and PR professionals who need to analyze data, track trends, and understand public sentiment to inform their reporting and communication strategies.
           </li>
         </ul>
 
