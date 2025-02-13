@@ -43,7 +43,7 @@ const features = [
   },
   {
     icon: ChartNoAxesCombined,
-    title: 'Predictive Analytics',
+    title: 'Churn Prediction Analytics',
     description:
       'Helps businesses predict and proactively address challenges like customer churn & market trends. ',
   },
@@ -86,7 +86,7 @@ export default function Features() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
             >
-              Empowering Your Data Journey with AI
+              Empower Your Data Journey with AI
             </motion.h2>
 
             <motion.p

@@ -11,10 +11,11 @@ type IProps = {
   title: string
   description: string
   buttonText: string
+  link: string
   shadow?: boolean
 }
 
-export function StartedCard({ title, description, buttonText, shadow }: IProps) {
+export function StartedCard({ title, description, buttonText, link, shadow }: IProps) {
   return (
     <div
       className={clsx(
@@ -24,9 +25,13 @@ export function StartedCard({ title, description, buttonText, shadow }: IProps) 
     >
       <h3 className="mb-2 text-xl font-semibold">{title}</h3>
       <p className="mb-4 text-gray-600">{description}</p>
-      <button className="w-full rounded-lg bg-indigo-600 px-4 py-2 text-white transition-colors duration-200 hover:bg-indigo-700">
+      <a
+        href={link}
+      >
+        <button className="w-full rounded-lg bg-indigo-600 px-4 py-2 text-white transition-colors duration-200 hover:bg-indigo-700">
         {buttonText}
-      </button>
+        </button>
+      </a>
     </div>
   )
 }
@@ -37,18 +42,21 @@ const features = [
     title: 'Try It Free',
     description: "Explore Arif's features at no cost. ",
     buttonText: 'Get Started Now',
+    link: 'coming-soon',
   },
   {
     icon: ChartNoAxesCombined,
     title: 'Book a Demo',
-    description: 'See Arif in action and learn how it can work for you. ',
+    description: 'See Arif in action, learn how it can work for you. ',
     buttonText: 'Schedule a Demo',
+    link: 'mailto:care@goarif.co',
   },
   {
     icon: User,
     title: 'Contact Us',
     description: 'Have questions? Our team is here to help. ',
     buttonText: 'Reach Out Today',
+    link: 'contact',
   },
 ]
 
@@ -100,6 +108,7 @@ export default function Started() {
                         title={feature.title}
                         description={feature.description}
                         buttonText={feature.buttonText}
+                        link={feature.link}
                       />
                     </div>
                   </ShineBorder>
