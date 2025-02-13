@@ -68,20 +68,8 @@ const tools = [
 
 const socialMedia = [
   {
-    icon: <IconBrandFacebook className="h-6 w-6" />,
-    link: '#',
-  },
-  {
-    icon: <IconBrandTwitter className="h-6 w-6" />,
-    link: '#',
-  },
-  {
     icon: <IconBrandLinkedin className="h-6 w-6" />,
     link: 'https://www.linkedin.com/company/arif-analytics/',
-  },
-  {
-    icon: <IconBrandInstagram className="h-6 w-6" />,
-    link: '#',
   },
 ]
 
@@ -153,20 +141,6 @@ export default function Footer() {
                   <li key={index}>
                     <Link href={resource.link} className="transition-colors hover:text-white">
                       {resource.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Tools */}
-            <div>
-              <h3 className="mb-4 text-lg font-semibold text-white">Tools We Use</h3>
-              <ul className="space-y-2">
-                {tools.map((tool, index) => (
-                  <li key={index}>
-                    <Link href={tool.link} className="transition-colors hover:text-white">
-                      {tool.title}
                     </Link>
                   </li>
                 ))}
