@@ -62,10 +62,10 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Link
-                href="#"
+                <Link
+                href="/coming-soon"
                 className="rounded-xl bg-indigo-600 px-8 py-2 font-semibold text-white transition-colors hover:bg-indigo-700"
-              >
+                >
                 Try it Now
               </Link>
             </motion.div>
@@ -88,3 +88,4 @@ export default function Hero() {
     </div>
   )
 }
+
