@@ -99,8 +99,8 @@ const menus = [
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
-  const login_url = 'coming-soon'
-  const register_url = 'coming-soon'
+  const login_url = '/coming-soon'
+  const register_url = '/coming-soon'
 
   return (
     <nav className="border-b bg-white">

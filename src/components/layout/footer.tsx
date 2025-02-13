@@ -1,10 +1,5 @@
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-  IconBrandTwitter,
-} from '@tabler/icons-react'
-import { Mail, MapPin } from 'lucide-react'
+import { IconBrandLinkedin, IconMail } from '@tabler/icons-react'
+import { MapPin } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
@@ -68,6 +63,10 @@ const tools = [
 
 const socialMedia = [
   {
+    icon: <IconMail className="h-6 w-6" />,
+    link: 'mailto:care@goarif.co',
+  },
+  {
     icon: <IconBrandLinkedin className="h-6 w-6" />,
     link: 'https://www.linkedin.com/company/arif-analytics/',
   },
@@ -93,9 +92,9 @@ export default function Footer() {
     <footer className="bg-gray-900 px-4 py-12 text-gray-300">
       <div className="container mx-auto">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-7">
             {/* About Us */}
-            <div className="col-span-1 md:col-span-2">
+            <div className="col-span-1 md:col-span-3">
               <h2 className="mb-4 text-2xl font-bold text-white">
                 <Link
                   href="/"
@@ -119,8 +118,7 @@ export default function Footer() {
               </form>
             </div>
 
-            {/* Company */}
-            <div>
+            <div className="col-span-1 md:col-span-2">
               <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
               <ul className="space-y-2">
                 {company.map((service, index) => (
@@ -133,8 +131,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Resources */}
-            <div>
+            <div className="col-span-1 md:col-span-2">
               <h3 className="mb-4 text-lg font-semibold text-white">Resources</h3>
               <ul className="space-y-2">
                 {resources.map((resource, index) => (
@@ -151,26 +148,16 @@ export default function Footer() {
           {/* Contact and Social */}
           <div className="mt-8 flex flex-col items-center justify-between border-t border-gray-700 pt-8 md:flex-row">
             <div className="flex flex-col gap-2">
-              <div className="flex flex-col gap-2">
-                <div className="flex flex-row gap-4">
-                  <ContactLink href="mailto:care@goarif.co" icon={<Mail className="h-4 w-4" />}>
-                    care@goarif.co
-                  </ContactLink>
-                  {/* <ContactLink href="tel:+628117576088" icon={<Phone className="h-4 w-4" />}>
-                    +62 811 757 6088
-                  </ContactLink> */}
-                </div>
-                <ContactLink
-                  href="https://maps.app.goo.gl/heQ4eFbBrmCz29rM6"
-                  icon={<MapPin className="h-4 w-4" />}
-                >
-                  Jl. Jend. Sudirman, Indonesia Stock Exchange, Tower 1, Level 3 Unit 304, Jakarta,
-                  DI Jakarta 12190, ID
-                </ContactLink>
-              </div>
+              <ContactLink
+                href="https://maps.app.goo.gl/heQ4eFbBrmCz29rM6"
+                icon={<MapPin className="h-4 w-4" />}
+              >
+                Jl. Jend. Sudirman, Indonesia Stock Exchange, Tower 1, Level 3 Unit 304, Jakarta, DI
+                Jakarta 12190, ID
+              </ContactLink>
             </div>
 
-            <div className="mt-4 flex space-x-4 sm:mt-0">
+            <div className="mt-4 flex flex-row items-center gap-4 sm:mt-0">
               {socialMedia.map((item, index) => (
                 <Link href={item.link} className="transition-colors hover:text-white" key={index}>
                   {item.icon}
